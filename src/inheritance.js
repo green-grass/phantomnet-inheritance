@@ -1,19 +1,19 @@
 (function (window, document, undefined) {
-    "use strict";
+    'use strict';
 
-    if (window.GG !== undefined) {
+    if (window.PN !== undefined) {
         return;
     }
 
     ////////////////////////////////////////////////////////////////
     // namespace
-    window.GG = {};
-    var GG = window.GG;
+    window.PN = {};
+    var PN = window.PN;
 
-    GG.namespace = function () {
+    PN.namespace = function () {
         var a = arguments, o = null, i, j, d;
         for (i = 0; i < a.length; i++) {
-            d = a[i].split(".");
+            d = a[i].split('.');
             o = window;
             for (j = 0; j < d.length; j++) {
                 o[d[j]] = o[d[j]] || {};
@@ -41,8 +41,8 @@
         // Copy the properties over onto the new prototype
         for (var name in prop) {
             // Check if we're overwriting an existing function
-            prototype[name] = typeof prop[name] === "function" &&
-                typeof _super[name] === "function" && fnTest.test(prop[name]) ?
+            prototype[name] = typeof prop[name] === 'function' &&
+                typeof _super[name] === 'function' && fnTest.test(prop[name]) ?
                 (function (name, fn) {
                     return function () {
                         var tmp = this._super;
@@ -82,6 +82,6 @@
         return NewClass;
     };
 
-    GG.Class = Class;
+    PN.Class = Class;
 
 })(window, document);
