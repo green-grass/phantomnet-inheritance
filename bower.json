@@ -1,20 +1,19 @@
 {
   "name": "phantomnet-inheritance",
-  "version": "1.0.0-beta2",
-  "homepage": "https://github.com/green-grass/phantomnet-inheritance",
+  "version": "1.0.0-beta3",
+  "description": "JavaScript OOP",
+  "main": ".dist/src/phantomnet-inheritance.js",
   "authors": [
     "Minh Nguyen <mnguyen284@gmail.com>"
   ],
-  "description": "JavaScript OOP",
-  "main": "src/phantomnet-inheritance.js",
-  "moduleType": [
-    "amd",
-    "es6",
-    "globals",
-    "node",
-    "yui"
-  ],
   "license": "MIT",
+  "keywords": [
+    "Inheritance"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "homepage": "https://github.com/green-grass/phantomnet-inheritance",
   "ignore": [
     "**/.*",
     "node_modules",
